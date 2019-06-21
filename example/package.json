@@ -1,0 +1,17 @@
+{
+  "name": "tread-example",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "prepare": "pika-web --clean --optimize",
+    "start": "serve"
+  },
+  "dependencies": {
+    "@tread/track": "0.0.1"
+  },
+  "devDependencies": {
+    "@pika/web": "0.4.3",
+    "serve": "11.0.2"
+  }
+}

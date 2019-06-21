@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "track",
+  "alias": "track.tread.fyi",
+  "builds": [{ "src": "index.js", "use": "@now/node" }]
+}

@@ -1,0 +1,13 @@
+- Accounts table
+  - client_id
+  - url_whitelist
+- Events table
+  - event_id
+  - client_id
+  - target_class_name
+  - target_id
+  - target_node_name
+  - target_text_content
+  - timestamp
+  - type
+  - url

@@ -1,0 +1,11 @@
+{
+  "name": "tread",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "api",
+    "example",
+    "packages/*"
+  ]
+}

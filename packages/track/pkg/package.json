@@ -1,0 +1,21 @@
+{
+  "name": "@tread/track",
+  "version": "0.0.1",
+  "license": "MIT",
+  "files": [
+    "dist-*/",
+    "bin/"
+  ],
+  "pika": true,
+  "sideEffects": false,
+  "dependencies": {},
+  "devDependencies": {
+    "@pika/pack": "0.4.0",
+    "@pika/plugin-build-node": "0.4.0",
+    "@pika/plugin-build-web": "0.4.0",
+    "@pika/plugin-standard-pkg": "0.4.0"
+  },
+  "esnext": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js"
+}
