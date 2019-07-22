@@ -1,12 +1,17 @@
 {
   "name": "@tread/track",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "license": "MIT",
   "esnext": "pkg/dist-src/index.js",
   "main": "pkg/dist-node/index.js",
   "module": "pkg/dist-web/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "build": "pack build"
+    "build": "pack build",
+    "release": "pack publish",
+    "version": "npm run build"
   },
   "devDependencies": {
     "@pika/pack": "0.4.0",
