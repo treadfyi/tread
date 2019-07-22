@@ -25,9 +25,8 @@ const track = clientID => {
       timestamp: Date.now(),
       type: eventData.type,
       url: window.location.href
-    }; // TODO: Update endpoint to `track.tread.fyi`
-
-    fetch("http://localhost:3000", {
+    };
+    fetch("https://track.tread.fyi/", {
       body: JSON.stringify(trackEvent),
       method: "POST"
     });

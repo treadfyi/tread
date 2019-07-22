@@ -2,5 +2,8 @@
   "name": "track-api",
   "version": "0.0.1",
   "private": true,
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "pg": "7.11.0"
+  }
 }

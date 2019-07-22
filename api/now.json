@@ -2,5 +2,13 @@
   "version": 2,
   "name": "track",
   "alias": "track.tread.fyi",
-  "builds": [{ "src": "index.js", "use": "@now/node" }]
+  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "env": {
+    "PGUSER": "@tread-alpha-pg-user",
+    "PGPASSWORD": "@tread-alpha-pg-password",
+    "PGHOST": "@tread-alpha-pg-host",
+    "PGDATABASE": "@tread-alpha-pg-database",
+    "PGPORT": "@tread-alpha-pg-port",
+    "PGSSLMODE": "@tread-alpha-pg-sslmode"
+  }
 }
