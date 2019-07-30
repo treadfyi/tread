@@ -7,5 +7,15 @@
       "src": "./next.config.js",
       "use": "@now/next"
     }
-  ]
+  ],
+  "env": {
+    "GITHUB_CLIENT_ID": "@tread-alpha-github-client-id",
+    "GITHUB_CLIENT_SECRET": "@tread-alpha-github-client-secret",
+    "PGUSER": "@tread-alpha-pg-user",
+    "PGPASSWORD": "@tread-alpha-pg-password",
+    "PGHOST": "@tread-alpha-pg-host",
+    "PGDATABASE": "@tread-alpha-pg-database",
+    "PGPORT": "@tread-alpha-pg-port",
+    "PGSSLMODE": "@tread-alpha-pg-sslmode"
+  }
 }
