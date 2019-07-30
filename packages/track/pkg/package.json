@@ -15,6 +15,9 @@
     "@pika/plugin-build-web": "0.4.0",
     "@pika/plugin-standard-pkg": "0.4.0"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "esnext": "dist-src/index.js",
   "main": "dist-node/index.js",
   "module": "dist-web/index.js"
