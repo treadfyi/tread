@@ -24,4 +24,5 @@ web_modules/
 
 # Dev files #
 ######################
+.next/
 .now
