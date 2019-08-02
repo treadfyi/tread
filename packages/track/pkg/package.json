@@ -1,6 +1,6 @@
 {
   "name": "@tread/track",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "files": [
     "dist-*/",
@@ -11,14 +11,14 @@
   "dependencies": {},
   "devDependencies": {
     "@pika/pack": "0.4.0",
-    "@pika/plugin-build-node": "0.4.0",
     "@pika/plugin-build-web": "0.4.0",
+    "@pika/plugin-bundle-web": "0.5.1",
     "@pika/plugin-standard-pkg": "0.4.0"
   },
   "publishConfig": {
     "access": "public"
   },
   "esnext": "dist-src/index.js",
-  "main": "dist-node/index.js",
-  "module": "dist-web/index.js"
+  "module": "dist-web/index.js",
+  "unpkg": "dist-web/index.bundled.js"
 }

@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "license": "MIT",
   "esnext": "pkg/dist-src/index.js",
-  "main": "pkg/dist-node/index.js",
+  "main": "pkg/dist-web/index.bundled.js",
   "module": "pkg/dist-web/index.js",
   "publishConfig": {
     "access": "public"
@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "@pika/pack": "0.4.0",
-    "@pika/plugin-build-node": "0.4.0",
     "@pika/plugin-build-web": "0.4.0",
+    "@pika/plugin-bundle-web": "0.5.1",
     "@pika/plugin-standard-pkg": "0.4.0"
   },
   "@pika/pack": {
@@ -25,10 +25,13 @@
         "@pika/plugin-standard-pkg"
       ],
       [
-        "@pika/plugin-build-node"
+        "@pika/plugin-build-web"
       ],
       [
-        "@pika/plugin-build-web"
+        "@pika/plugin-bundle-web",
+        {
+          "entrypoint": "unpkg"
+        }
       ]
     ]
   }
