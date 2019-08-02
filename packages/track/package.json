@@ -1,6 +1,6 @@
 {
   "name": "@tread/track",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "esnext": "pkg/dist-src/index.js",
   "main": "pkg/dist-node/index.js",

@@ -13,6 +13,7 @@ const track = clientID => {
     id: Math.random().toString(36).substring(2, 15),
     clientID: clientID,
     path: window.location.pathname,
+    timestamp: Date.now(),
     type: "SESSION",
     userAgent: window.navigator.userAgent,
     url: window.location.origin
