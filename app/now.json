@@ -8,6 +8,12 @@
       "use": "@now/next"
     }
   ],
+  "build": {
+    "env": {
+      "GITHUB_CLIENT_ID": "@tread-alpha-github-client-id",
+      "TREAD_APP_API": "@tread-alpha-tread-app-api"
+    }
+  },
   "env": {
     "GITHUB_CLIENT_ID": "@tread-alpha-github-client-id",
     "GITHUB_CLIENT_SECRET": "@tread-alpha-github-client-secret",

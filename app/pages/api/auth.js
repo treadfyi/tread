@@ -23,14 +23,20 @@ export default async (req, res) => {
       }
     }).then(response => response.json());
 
+    if (typeof user.id === "undefined") {
+      throw "Could not authenticate GitHub user";
+    }
+
     const pool = new Pool();
+
+    let clientID;
 
     const account = await pool.query(
       `SELECT * FROM accounts WHERE github_id = '${user.id}'`
     );
 
     if (account.rows.length === 0) {
-      const clientID = Math.random()
+      clientID = Math.random()
         .toString(36)
         .substring(2, 15);
 
@@ -43,20 +49,21 @@ export default async (req, res) => {
         '${user.id}'
       )`
       );
+    } else {
+      clientID = account.rows[0].client_id;
     }
 
     await pool.end();
 
-    res.setHeader("Content-Type", "application/json");
+    res.writeHead(302, {
+      "Set-Cookie": `tread_app_client_id=${clientID}; Max-Age=2629800`,
+      Location: "/"
+    });
 
-    res.setHeader("Location", "/");
-
-    res.statusCode = 302;
-
-    res.end();
+    res.end(JSON.stringify({ error: null }));
   } catch (error) {
     res.statusCode = 500;
 
-    res.end(JSON.stringify({ error: error, tracked: false }));
+    res.end(JSON.stringify({ error: error }));
   }
 };

@@ -939,7 +939,7 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tread/track@0.0.1":
+"@tread/track@latest":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@tread/track/-/track-0.0.1.tgz#2af3c63b0acb81f97e99d51974ff6ffb4ef20884"
   integrity sha512-SGHkVe2N4J+1jcDTExzEPriveumaTwU4Cmy6DT5Ig6EUYHGT4F1Xu0AZM8p7Y9OuyOllr0f8zLnXKGO1vCb3pA==
@@ -2434,6 +2434,11 @@ dot-prop@^4.1.0:
   integrity sha512-tUMXrxlExSW6U2EXiiKGSBVdYgtV8qlHL+C10TsW4PURY/ic+eaysnSkwB4kA/mBlCyy/IKDJ+Lc3wbWeaXtuQ==
   dependencies:
     is-obj "^1.0.0"
+
+dotenv@8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.0.0.tgz#ed310c165b4e8a97bb745b0a9d99c31bda566440"
+  integrity sha512-30xVGqjLjiUOArT4+M5q9sYdvuR4riM6yK9wMcas9Vbp6zZa+ocC9dp6QoftuhTPhFAiLK/0C5Ni2nou/Bk8lg==
 
 duplexer3@^0.1.4:
   version "0.1.4"
