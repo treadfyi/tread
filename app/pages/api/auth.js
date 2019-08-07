@@ -56,7 +56,7 @@ export default async (req, res) => {
     await pool.end();
 
     res.writeHead(302, {
-      "Set-Cookie": `tread_app_client_id=${clientID}; Max-Age=2629800`,
+      "Set-Cookie": `tread_app_client_id=${clientID}; Max-Age=2629800; Path=/`,
       Location: "/"
     });
 

@@ -11,9 +11,11 @@ export default class extends App {
       pageProps = await Component.getInitialProps(ctx);
     }
 
-    const res = await fetch(`${process.env.TREAD_APP_API}/dashboard`).then(
-      res => res.json()
-    );
+    const res = await fetch(`${process.env.TREAD_APP_API}/dashboard`, {
+      headers: {
+        Cookie: ctx.req.headers.cookie
+      }
+    }).then(res => res.json());
 
     if (!res.error) {
       data = res.data;
