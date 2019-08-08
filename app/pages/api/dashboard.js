@@ -22,11 +22,11 @@ export default async (req, res) => {
     }
 
     const events = await pool.query(
-      `SELECT * FROM events WHERE client_id = '${clientID}'`
+      `SELECT * FROM events WHERE client_id = '${clientID}' ORDER BY timestamp DESC`
     );
 
     const sessions = await pool.query(
-      `SELECT * FROM sessions WHERE client_id = '${clientID}'`
+      `SELECT * FROM sessions WHERE client_id = '${clientID}' ORDER BY timestamp DESC`
     );
 
     await pool.end();

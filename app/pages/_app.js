@@ -13,7 +13,7 @@ export default class extends App {
 
     const res = await fetch(`${process.env.TREAD_APP_API}/dashboard`, {
       headers: {
-        Cookie: ctx.req.headers.cookie
+        Cookie: ctx.req ? ctx.req.headers.cookie : document.cookie
       }
     }).then(res => res.json());
 

@@ -21,6 +21,10 @@ export default class extends Document {
             property="og:image"
             content="https://app.tread.fyi/static/og-image.png"
           />
+          <link
+            href="https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap"
+            rel="stylesheet"
+          />
           <link rel="stylesheet" href="/static/style.css" />
         </Head>
         <body>
