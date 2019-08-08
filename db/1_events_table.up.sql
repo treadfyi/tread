@@ -13,3 +13,12 @@ CREATE TABLE events (
   type text NOT NULL,
   url text NOT NULL
 );
+
+CREATE FUNCTION on_events_insert() RETURNS TRIGGER AS $$
+  BEGIN
+    PERFORM pg_notify('events_insert', row_to_json(NEW)::text);
+    RETURN NULL;
+  END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER events_insert AFTER INSERT ON events FOR EACH ROW EXECUTE FUNCTION on_events_insert();
