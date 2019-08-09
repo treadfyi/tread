@@ -95,9 +95,9 @@ class Home extends React.Component {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-target"
                 >
                   <circle cx="12" cy="12" r="10" />
@@ -115,9 +115,9 @@ class Home extends React.Component {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#6fcf97"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-radio"
                 >
                   <circle cx="12" cy="12" r="2" />
@@ -134,9 +134,9 @@ class Home extends React.Component {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="#f2c94c"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="feather feather-zap"
                 >
                   <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
@@ -153,9 +153,9 @@ class Home extends React.Component {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="feather feather-activity"
               >
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
@@ -245,9 +245,9 @@ class Home extends React.Component {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 className="feather feather-mouse-pointer"
               >
                 <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" />
