@@ -3,6 +3,7 @@
   --md-blue: #2f80ed;
   --lt-blue: #56ccf2;
   --dk-grey: #333333;
+  --yellow: #f2c94c;
 }
 
 * {
@@ -29,6 +30,15 @@ code {
   padding: 4px;
 }
 
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  color: var(--md-blue);
+  font-size: 20px;
+}
+
 header {
   align-items: center;
   display: flex;
@@ -49,32 +59,35 @@ p {
 }
 
 .event-report {
-  border: 1px dotted var(--md-blue);
+  border: 1px solid #eee;
+  border-collapse: collapse;
   border-radius: 4px;
+  width: 100%;
 }
 
 .event-report-cell {
-  /* display: inline-block; */
-  flex: 1;
+  padding: 16px 24px;
+}
+
+.event-report-cell.event-report-cell-highlight {
+  color: #ff80e1;
 }
 
 .event-row-head {
-  display: flex;
   margin: 8px 0;
-  overflow-x: scroll;
   padding: 8px 16px;
+  text-align: left;
 }
 
 .event-row-head h4 {
-  flex: 1;
   margin: 0 16px 0 0;
+  padding: 16px 24px;
+  text-transform: uppercase;
 }
 
 .event-row {
-  display: flex;
-  margin: 8px 0;
-  overflow-x: scroll;
-  padding: 8px 16px;
+  background-color: #002240;
+  color: white;
 }
 
 .event-row:hover {
@@ -82,15 +95,34 @@ p {
   color: white;
 }
 
-.event-row > span {
-  flex: 1;
-  margin-right: 16px;
+.event-row.event-row-realtime .event-report-cell.event-report-cell-highlight {
+  color: var(--yellow);
+}
+
+.feather {
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
 .logo {
   height: 50px;
   vertical-align: middle;
   width: 50px;
+}
+
+.project-status {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.project-status-item {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.section-header {
+  margin: 64px 0 32px 0;
 }
 
 .version {
