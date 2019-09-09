@@ -1,0 +1,9 @@
+version: "3"
+services:
+  tread-realtime:
+    build: ./tread-realtime
+    image: treadfyi/tread-realtime
+    ports:
+      - "3003:3003"
+    volumes:
+      - ./tread-realtime:/tread-realtime

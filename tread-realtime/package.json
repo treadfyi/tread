@@ -1,0 +1,16 @@
+{
+  "name": "tread-realtime",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Realtime events service for Tread analytics",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cookie": "0.4.0",
+    "dotenv": "8.1.0",
+    "pg": "7.12.1",
+    "polka": "0.5.2"
+  }
+}

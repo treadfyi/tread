@@ -4,14 +4,15 @@
   "alias": "app.tread.fyi",
   "builds": [
     {
-      "src": "./next.config.js",
+      "src": "next.config.js",
       "use": "@now/next"
     }
   ],
   "build": {
     "env": {
       "GITHUB_CLIENT_ID": "@tread-alpha-github-client-id",
-      "TREAD_APP_API": "@tread-alpha-tread-app-api"
+      "TREAD_APP_API": "@tread-alpha-tread-app-api",
+      "TREAD_REALTIME": "@tread-alpha-tread-realtime"
     }
   },
   "env": {
