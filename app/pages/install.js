@@ -4,9 +4,7 @@ import React from "react";
 class Install extends React.Component {
   componentDidMount() {
     if (typeof this.props.data === "undefined") {
-      window.location = `https://github.com/login/oauth/authorize?client_id=${
-        process.env.GITHUB_CLIENT_ID
-      }`;
+      window.location = `https://github.com/login/oauth/authorize?client_id=${this.props.githubClientID}`;
     }
   }
 

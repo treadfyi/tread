@@ -5,12 +5,15 @@
   "description": "Realtime events service for Tread analytics",
   "license": "MIT",
   "scripts": {
+    "dev": "env-cmd node index.js",
     "start": "node index.js"
   },
   "dependencies": {
     "cookie": "0.4.0",
-    "dotenv": "8.1.0",
     "pg": "7.12.1",
     "polka": "0.5.2"
+  },
+  "devDependencies": {
+    "env-cmd": "10.0.1"
   }
 }

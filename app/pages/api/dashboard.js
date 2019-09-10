@@ -42,12 +42,21 @@ export default async (req, res) => {
           events: events.rows,
           sessions: sessions.rows
         },
-        error: null
+        error: null,
+        githubClientID: process.env.GITHUB_CLIENT_ID,
+        realtimeEventSourceURL: process.env.TREAD_REALTIME
       })
     );
   } catch (error) {
     res.statusCode = 500;
 
-    res.end(JSON.stringify({ data: null, error: error }));
+    res.end(
+      JSON.stringify({
+        data: null,
+        error: error,
+        githubClientID: process.env.GITHUB_CLIENT_ID,
+        realtimeEventSourceURL: process.env.TREAD_REALTIME
+      })
+    );
   }
 };

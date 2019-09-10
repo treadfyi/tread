@@ -3,5 +3,5 @@
 ## Local development
 
 ```sh
-now dev
+yarn dev
 ```

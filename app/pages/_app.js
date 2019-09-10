@@ -11,7 +11,11 @@ export default class extends App {
       pageProps = await Component.getInitialProps(ctx);
     }
 
-    const res = await fetch(`${process.env.TREAD_APP_API}/dashboard`, {
+    const host = ctx.req ? ctx.req.headers.host : location.host;
+
+    const protocol = host.indexOf("localhost") !== -1 ? "http:" : "https:";
+
+    const res = await fetch(`${protocol}//${host}/api/dashboard`, {
       headers: {
         Cookie: ctx.req ? ctx.req.headers.cookie : document.cookie
       }
@@ -21,11 +25,22 @@ export default class extends App {
       data = res.data;
     }
 
-    return { pageProps, data };
+    return {
+      pageProps,
+      data,
+      githubClientID: res.githubClientID,
+      realtimeEventSourceURL: res.realtimeEventSourceURL
+    };
   }
 
   render() {
-    const { Component, data, pageProps } = this.props;
+    const {
+      Component,
+      data,
+      githubClientID,
+      pageProps,
+      realtimeEventSourceURL
+    } = this.props;
 
     return (
       <Container>
@@ -33,7 +48,12 @@ export default class extends App {
           <title>App - Tread</title>
         </Head>
 
-        <Component data={data} {...pageProps} />
+        <Component
+          data={data}
+          githubClientID={githubClientID}
+          realtimeEventSourceURL={realtimeEventSourceURL}
+          {...pageProps}
+        />
       </Container>
     );
   }

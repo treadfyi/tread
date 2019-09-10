@@ -9,6 +9,7 @@ services:
       - ./app:/app
   tread-realtime:
     build: ./tread-realtime
+    command: yarn dev
     image: treadfyi/tread-realtime
     ports:
       - "8080:80"

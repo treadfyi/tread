@@ -8,13 +8,6 @@
       "use": "@now/next"
     }
   ],
-  "build": {
-    "env": {
-      "GITHUB_CLIENT_ID": "@tread-alpha-github-client-id",
-      "TREAD_APP_API": "@tread-alpha-tread-app-api",
-      "TREAD_REALTIME": "@tread-alpha-tread-realtime"
-    }
-  },
   "env": {
     "GITHUB_CLIENT_ID": "@tread-alpha-github-client-id",
     "GITHUB_CLIENT_SECRET": "@tread-alpha-github-client-secret",
@@ -23,6 +16,7 @@
     "PGHOST": "@tread-alpha-pg-host",
     "PGDATABASE": "@tread-alpha-pg-database",
     "PGPORT": "@tread-alpha-pg-port",
-    "PGSSLMODE": "@tread-alpha-pg-sslmode"
+    "PGSSLMODE": "@tread-alpha-pg-sslmode",
+    "TREAD_REALTIME": "@tread-alpha-tread-realtime"
   }
 }

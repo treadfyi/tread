@@ -2,8 +2,6 @@ const cookie = require("cookie");
 const { Client } = require("pg");
 const polka = require("polka");
 
-require("dotenv").config();
-
 const { PORT = 8080 } = process.env;
 
 polka()
