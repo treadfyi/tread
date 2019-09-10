@@ -29,5 +29,5 @@ docker push treadfyi/tread-realtime
 ## Run Docker image in container
 
 ```sh
-docker run --detach --env-file env.list --rm treadfyi/tread-realtime
+docker run --detach --env-file env.list --publish 80:8080 --rm treadfyi/tread-realtime
 ```

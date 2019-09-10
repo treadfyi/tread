@@ -1,9 +1,16 @@
 version: "3"
 services:
+  app:
+    build: ./app
+    image: treadfyi/tread-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/app
   tread-realtime:
     build: ./tread-realtime
     image: treadfyi/tread-realtime
     ports:
-      - "3003:3003"
+      - "8080:80"
     volumes:
       - ./tread-realtime:/tread-realtime

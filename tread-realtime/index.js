@@ -4,7 +4,7 @@ const polka = require("polka");
 
 require("dotenv").config();
 
-const { PORT = 3003 } = process.env;
+const { PORT = 8080 } = process.env;
 
 polka()
   .get("/", async (req, res) => {
